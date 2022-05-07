@@ -1,0 +1,67 @@
+.parent-footer hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.top-footer {
+    height: 50px;
+    background-image: linear-gradient(to top, #080505, #010109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.top-footer Button {
+    font-size: 10px;
+}
+
+.bottom-footer {
+    height: 80px;
+    background-image: linear-gradient(to bottom, #080607, #020803);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-child {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-child h6 {
+    color: lightgray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.bottom-footer span {
+    margin: 5px;
+}
+
+.ground-footer {
+    height: 30px;
+    background-image: linear-gradient(to top, #080607, #020803);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ground-footer h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    font-size: 10px;
+    color: lightgrey;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width:600px) {
+    .ground-footer span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px;
+    }
+}

@@ -1,0 +1,80 @@
+.title-Style {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-title img {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.tittles {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+.height-control {
+    height: 60px;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: 0px 1px 5px #b8b8b8,
+        5px 3px 3px #ffffff;
+}
+
+.Font-styles {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Login {
+    background: #464646;
+    border-radius: 50px;
+    font-size: 14px;
+    border-right: 4px solid #2c2c2c;
+    margin-right: 5px;
+}
+
+.logout Button {
+    width: 55px;
+    height: 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login:hover {
+    background: #01af3e;
+}
+
+.register {
+    background: #464646;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.register:hover {
+    background: #01af3e;
+}
+
+@media only screen and (max-width: 600px) {
+    #responsive-navbar-nav .register {
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-title img {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tittles {
+        font-size: 13px;
+    }
+}

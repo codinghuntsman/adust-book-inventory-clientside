@@ -1,0 +1,67 @@
+[
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+        "name": "BEGINNER C PROGRAMMING",
+        "supplier": "zuliana behens",
+        "description": "this book is mother of of programming language.you should learn it",
+        "price": 420,
+        "stock": 20,
+        "ratings": 5,
+        "img": "https://i.ibb.co/6RR862R/lbooks-1.png",
+        "quantity": 1
+    },
+    {
+        "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+        "name": "DATA STRUCTURE",
+        "supplier": "suzana hamnenia",
+        "description": "more and more efficient book this is.you can learn more here",
+        "price": 196,
+        "stock": 19,
+        "ratings": 5,
+        "img": "https://i.ibb.co/WH97cfH/lbooks-2.png",
+        "quantity": 1
+    },
+    {
+        "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+        "name": "DATA ANALYSIS",
+        "supplier": "devid korenta",
+        "description": "this is the most popular book that you learn more data analysis",
+        "price": 245,
+        "stock": 20,
+        "ratings": 5,
+        "img": "https://i.ibb.co/SfVFJXB/lbooks-4.png",
+        "quantity": 1
+    },
+    {
+        "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+        "name": "COMPUTER COMPUTATION",
+        "supplier": "Hamim folbeder",
+        "description": "very exciting book this is.many more concept is here",
+        "price": 229,
+        "stock": 10,
+        "ratings": 5,
+        "img": "https://i.ibb.co/zR2YpQJ/lbooks-8.png",
+        "quantity": 1
+    },
+    {
+        "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+        "name": "BEGINNER JAVA LANGUAGE",
+        "supplier": "kareana kortecis",
+        "description": "the most popular language is java. you may learn more and more",
+        "price": 287,
+        "stock": 11,
+        "ratings": 4,
+        "img": "https://i.ibb.co/L13ZPND/lbooks-10.png",
+        "quantity": 1
+    },
+    {
+        "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+        "name": "MICROPROCESSOR AND CONTROLLER",
+        "supplier": "mohamina jamil",
+        "description": "this is the best one book that i prefer most",
+        "price": 150,
+        "stock": 19,
+        "img": "https://i.ibb.co/PTpXffP/lbooks-11.png",
+        "quantity": 1
+    }
+]

@@ -1,0 +1,63 @@
+.form-background ::placeholder {
+    font-size: 10px;
+    font-family: sans-serif, lato;
+}
+
+.images-style img {
+    width: 400px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .images-style img {
+        height: 140px;
+    }
+
+    .form-styles {
+        margin-top: 23px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form-check-label {
+        font-size: 11px;
+    }
+}
+
+.login-field button {
+    width: 123px;
+    height: 24px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-link {
+    font-size: 11px;
+    margin-left: 4px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.register-link button {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #295eff;
+}
+
+.register-link button:hover {
+    color: green;
+}
+
+.google-btn button {
+    font-size: 12px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
