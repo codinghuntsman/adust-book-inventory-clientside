@@ -10,6 +10,8 @@ import Inventory from './components/Inventory/Inventory';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Register from './components/Register/Register';
 import Blogs from './components/Blogs/Blogs';
+import UpdateUser from './components/UpdateUser/UpdateUser';
+import AddItem from './components/AddItem/AddItem';
 
 function App() {
   return (
@@ -25,6 +27,10 @@ function App() {
           </RequireAuth>} >
         </Route>
         <Route path='/blogs' element={<Blogs />}></Route>
+        <Route path='/update/:id' element={<UpdateUser />}></Route>
+        <Route path='/additem' element={<RequireAuth>
+          <AddItem />
+        </RequireAuth>}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='*' element={<Notfound />}></Route>

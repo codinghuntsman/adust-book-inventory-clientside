@@ -1,0 +1,10 @@
+.inventory p {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-family: sans-serif;
+}
+
+.inventory p span {
+    font-weight: bold;
+    color: black;
+}

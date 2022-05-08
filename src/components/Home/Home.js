@@ -70,7 +70,7 @@ const Home = () => {
             </div>
             <div className='container d-flex justify-evenly mt-3' id='manage'>
                 <Link className='fw-bold text-decoration-none manage-buttons' to='/inventory'>MANAGE INVENTORY</Link>
-                <Link className='fw-bold text-decoration-none manage-buttons' to='/inventory'>ADD NEW ITEM</Link>
+                <Link className='fw-bold text-decoration-none manage-buttons' to='/additem'>ADD NEW ITEM</Link>
             </div>
 
             <div className='why-adust'>
