@@ -30,7 +30,7 @@
  * 3. npm install --save react-firebase-hooks
  * 
  * ---------------------------
- **firebase hosting step
+ **firebase hosting steps
  * --------------------------
  * 1. npm install -g firebase-tools (one time for your computer)
  * 2. firebase login (one time for your computer)
