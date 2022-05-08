@@ -1,10 +1,5 @@
-.parent-footer hr {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .top-footer {
-    height: 50px;
+    height: 60px;
     background-image: linear-gradient(to top, #080505, #010109);
     display: flex;
     justify-content: center;
@@ -12,12 +7,17 @@
     margin-top: 20px;
 }
 
+.parent-footer hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .top-footer Button {
     font-size: 10px;
 }
 
 .bottom-footer {
-    height: 80px;
+    height: 90px;
     background-image: linear-gradient(to bottom, #080607, #020803);
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
 }
 
 .ground-footer {
-    height: 30px;
+    height: 40px;
     background-image: linear-gradient(to top, #080607, #020803);
     display: flex;
     justify-content: center;
