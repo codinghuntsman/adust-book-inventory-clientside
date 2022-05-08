@@ -3,6 +3,9 @@ Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-man
 
 Click here for live link: https://a11-authentication.web.app/
 
+# Server side private repo
+Click here for link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdsajedulislamcse
+
 
 # stack overflow account
 Click here for link: https://stackoverflow.com/users/18383895/md-sajedul-islam?tab=profile
