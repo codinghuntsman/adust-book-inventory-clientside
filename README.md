@@ -1,5 +1,5 @@
 # client side private repo
-Click here for private repo:
+Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdsajedulislamcse
 
 
 
