@@ -4,12 +4,8 @@ Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-man
 Click here for live link: https://a11-authentication.web.app/
 
 
-
-
-
-
-
-
+# stack overflow account
+Click here for link: https://stackoverflow.com/users/18383895/md-sajedul-islam?tab=profile
 
 <P>Project overview</p>
 <li>Two types of header han been implemented</li>
@@ -17,6 +13,3 @@ Click here for live link: https://a11-authentication.web.app/
 <li>There are amazing banner implementation also different types of section</li>
 <li>There are different types of page</li>
 <li>Therefor, amazing footer has been implemented</li>
-
-# stack overflow account
-Click here for link: https://stackoverflow.com/users/18383895/md-sajedul-islam?tab=profile

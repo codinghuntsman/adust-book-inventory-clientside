@@ -58,7 +58,7 @@
 .middle-single-product {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
+    column-gap: 35px;
     margin-left: 60px;
     margin-right: 60px;
 }
@@ -79,7 +79,7 @@
 .bottom-single-product {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 13px;
+    column-gap: 25px;
     margin-left: 60px;
     margin-right: 60px;
 }
