@@ -27,7 +27,7 @@ function App() {
           </RequireAuth>} >
         </Route>
         <Route path='/blogs' element={<Blogs />}></Route>
-        <Route path='/update/:id' element={<UpdateQuantity />}></Route>
+        <Route path='/update' element={<UpdateQuantity />}></Route>
         <Route path='/additem' element={<RequireAuth>
           <AddItem />
         </RequireAuth>}></Route>
