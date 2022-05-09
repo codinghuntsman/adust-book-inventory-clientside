@@ -6,6 +6,8 @@ const ProductReview = ({ product }) => {
 
     const { name, img, description, price, supplier, quantity } = product;
 
+
+
     return (
         <div className='product-review'>
             <img src={img} alt="images" />
@@ -16,7 +18,7 @@ const ProductReview = ({ product }) => {
                 <p><span>price:</span> ${price}</p>
                 <p><span>quantity:</span> {quantity}</p>
             </div>
-            <Link className='fw-bold text-decoration-none update-btn' to='/inventory'>UPDATE</Link>
+            <Link className='fw-bold text-decoration-none update-btn' to='/update/:id'>UPDATE</Link>
         </div>
     );
 };

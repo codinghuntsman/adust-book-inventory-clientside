@@ -1,29 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import './UpdateUser.css';
+import './UpdateQuantity.css';
 
-const UpdateUser = () => {
+const UpdateQuantity = () => {
+    const [isReaload, setIsRealod] = useState(true)
 
     const { id } = useParams();
     const [user, setUser] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/user/${id}`;
+        const url = `https://damp-tundra-15711.herokuapp.com/user/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setUser(data))
-    }, []);
+    }, [isReaload]);
 
 
-    const handleUpdateUser = (event) => {
+    const handleUpdateQuantity = (event) => {
         event.preventDefault();
-        const name = event.target.name.value;
-        const email = event.target.email.value;
-        const updatedUser = { name, email }
+        const quantity = event.target.name.value;
+        const newQuantity = parseInt(quantity) + parseInt(user.quantity);
+        const updatedUser = { quantity: newQuantity };
 
 
-        //------- Update user---------
-        const url = `http://localhost:5000/user/${id}`;
+        //------- Update Quantity---------
+        const url = `https://damp-tundra-15711.herokuapp.com/user/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -33,7 +34,7 @@ const UpdateUser = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                setIsRealod(!isReaload);
                 alert('User updated successfully !! Go to database to see')
                 event.target.reset();
             })
@@ -41,15 +42,11 @@ const UpdateUser = () => {
     return (
         <div>
             <div className='mt-2'>
-                <h6 className='text-center font-serif fw-bold'>Please update user</h6>
-                <Form onSubmit={handleUpdateUser} className='container w-25'>
+                <h6 className='text-center font-serif fw-bold'>Please update quantity</h6>
+                <Form onSubmit={handleUpdateQuantity} className='container w-25'>
                     <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                        <Form.Label className='mb-0 font-serif'>Name</Form.Label>
-                        <Form.Control size="sm" type="text" name="name" placeholder="name" />
-                    </Form.Group>
-                    <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
-                        <Form.Label className='mb-0 font-serif'>Email</Form.Label>
-                        <Form.Control size="sm" type="email" name="email" placeholder="email" />
+                        <Form.Label className='mb-0 font-serif'>Quantity</Form.Label>
+                        <Form.Control size="sm" type="number" name="name" placeholder="Quantity" />
                     </Form.Group>
                     <Button variant='outline-success' className='rounded-pill h-6 fw-bold  d-flex justify-center items-center' type='submit'>Update</Button>
                 </Form>
@@ -58,4 +55,4 @@ const UpdateUser = () => {
     );
 };
 
-export default UpdateUser;
+export default UpdateQuantity;
