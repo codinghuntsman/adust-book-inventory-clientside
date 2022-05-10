@@ -1,7 +1,8 @@
 # client side private repo
 Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdsajedulislamcse
 
-Click here for live link: https://a11-authentication.web.app/
+# Heroku live link
+Click here for heroku live link: https://stormy-mesa-19852.herokuapp.com/
 
 # Server side private repo
 Click here for link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdsajedulislamcse

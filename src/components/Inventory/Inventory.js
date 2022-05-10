@@ -7,7 +7,7 @@ const Inventory = () => {
     //-----Show users data on inventory ManageInventory--------
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/user")
+        fetch("https://stormy-mesa-19852.herokuapp.com/user")
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);

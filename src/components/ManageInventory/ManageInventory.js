@@ -8,7 +8,7 @@ const ManageInventory = ({ product }) => {
 
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/user")
+        fetch("https://stormy-mesa-19852.herokuapp.com/user")
             .then(res => res.json())
             .then(data => setUsers(data));
     }, [])
@@ -16,7 +16,7 @@ const ManageInventory = ({ product }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure you want to delete?")
         if (proceed) {
-            const url = `http://localhost:5000/user/${id}`;
+            const url = `https://stormy-mesa-19852.herokuapp.com/user/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -37,7 +37,7 @@ const ManageInventory = ({ product }) => {
                 <p><span>Quantity:</span> {quantity}</p>
                 <p><span>Description:</span> {description}</p>
                 <div>
-                    <Button onClick={() => handleDelete(users._id)} size='sm' variant='outline-danger' className='delete-btn font-serif'>Delete</Button>
+                    <Button onClick={() => handleDelete(product._id)} key={product._id} size='sm' variant='outline-danger' className='delete-btn font-serif'> <Link className='fw-bold text-dark text-decoration-none' to="/inventory">Delete</Link></Button>
                 </div>
                 <div>
                     <Button size='sm' variant='outline-info' className='add-item-btn font-serif'><Link className='fw-bold text-dark text-decoration-none' to="/additem">Add new item</Link></Button>
@@ -48,3 +48,5 @@ const ManageInventory = ({ product }) => {
 };
 
 export default ManageInventory;
+
+// to={`/update/${product._id}`}

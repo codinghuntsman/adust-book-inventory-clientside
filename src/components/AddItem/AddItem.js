@@ -22,7 +22,7 @@ const AddItem = () => {
 
 
         //-------Post method: post a user into backend---------
-        fetch('http://localhost:5000/user', {
+        fetch('https://stormy-mesa-19852.herokuapp.com/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

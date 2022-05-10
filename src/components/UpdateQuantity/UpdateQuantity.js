@@ -10,7 +10,7 @@ const UpdateQuantity = () => {
     const [user, setUser] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/user/${id}`;
+        const url = `https://stormy-mesa-19852.herokuapp.com/user/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setUser(data))
@@ -24,7 +24,7 @@ const UpdateQuantity = () => {
         const updatedQuantity = { quantity: newQuantity };
 
         //------- Update Quantity---------
-        const url = `http://localhost:5000/user/${id}`;
+        const url = `https://stormy-mesa-19852.herokuapp.com/user/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
