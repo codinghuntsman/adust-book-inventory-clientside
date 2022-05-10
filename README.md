@@ -2,7 +2,7 @@
 Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdsajedulislamcse
 
 # live link
-Click here for live link: http://localhost:3000/
+Click here for live link:  https://a11-authentication.web.app/
 
 # Server side private repo
 Click here for link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdsajedulislamcse
