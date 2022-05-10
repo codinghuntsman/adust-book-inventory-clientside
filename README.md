@@ -1,8 +1,8 @@
 # client side private repo
 Click here for private repo: https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdsajedulislamcse
 
-# Heroku live link
-Click here for heroku live link: https://stormy-mesa-19852.herokuapp.com/
+# live link
+Click here for live link: http://localhost:3000/
 
 # Server side private repo
 Click here for link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdsajedulislamcse
