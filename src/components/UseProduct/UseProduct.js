@@ -4,7 +4,7 @@ const UseProduct = () => {
     // ----------This is custom hook------------
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://damp-tundra-15711.herokuapp.com/user')
+        fetch('http://localhost:5000/user')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);

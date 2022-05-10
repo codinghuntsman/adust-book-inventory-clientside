@@ -1,0 +1,25 @@
+.update-quantity-parent-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.update-quantity p span {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: sans-serif;
+
+}
+
+.update-quantity p {
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+.image img {
+    width: 180px;
+    border-radius: 3px;
+}

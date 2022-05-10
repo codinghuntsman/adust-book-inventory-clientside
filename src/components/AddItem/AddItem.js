@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import './AddItem.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './../../firebase.init';
+import { Link } from 'react-router-dom';
 
 
 const AddItem = () => {
@@ -21,7 +22,7 @@ const AddItem = () => {
 
 
         //-------Post method: post a user into backend---------
-        fetch('https://damp-tundra-15711.herokuapp.com/user', {
+        fetch('http://localhost:5000/user', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -41,33 +42,40 @@ const AddItem = () => {
             <Form onSubmit={handleAddNewItem} className='w-50 mx-auto'>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Book Name</Form.Label>
-                    <Form.Control size="sm" type="text" name="name1" placeholder="Book name" />
+                    <Form.Control size="sm" type="text" name="name1" placeholder="Book name" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Supplier Name</Form.Label>
-                    <Form.Control size="sm" type="text" name="name2" placeholder="Supplier name" />
+                    <Form.Control size="sm" type="text" name="name2" placeholder="Supplier name" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Description</Form.Label>
-                    <Form.Control size="sm" type="text" name="name3" placeholder="Description" />
+                    <Form.Control size="sm" type="text" name="name3" placeholder="Description" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Price</Form.Label>
-                    <Form.Control size="sm" type="number" name="name4" placeholder="Price" />
+                    <Form.Control size="sm" type="number" name="name4" placeholder="Price" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Quantity</Form.Label>
-                    <Form.Control size="sm" type="number" name="name5" placeholder="Quantity" />
+                    <Form.Control size="sm" type="number" name="name5" placeholder="Quantity" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Image</Form.Label>
-                    <Form.Control size="sm" type="text" name="name6" placeholder="Image url" />
+                    <Form.Control size="sm" type="text" name="name6" placeholder="Image url" required />
                 </Form.Group>
                 <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
                     <Form.Label className='mb-0 font-serif'>Email</Form.Label>
                     <Form.Control size="sm" value={user.email} type="email" name="email" placeholder="Your email" />
                 </Form.Group>
-                <Button variant='outline-info' className='rounded-pill h-6 fw-bold  d-flex justify-center items-center' type='submit'>Add item</Button>
+                <div className='d-flex justify-center items-center justify-around'>
+                    <div>
+                        <Button size='sm' variant='outline-success rounded-pill' className='fw-bold font-serif' type='submit'>Add item</Button>
+                    </div>
+                    <div>
+                        <Button size='sm' variant='outline-success rounded-pill' className='fw-bold font-serif' type='submit'><Link className='fw-bold text-dark text-decoration-none' to="/inventory">Go Back</Link></Button>
+                    </div>
+                </div>
             </Form>
         </div>
     );

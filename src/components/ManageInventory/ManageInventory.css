@@ -1,0 +1,41 @@
+.manage-inventory p {
+    font-size: 12px;
+    margin-bottom: 0;
+    font-family: sans-serif;
+}
+
+.manage-inventory p span {
+    font-weight: bold;
+    color: black;
+}
+
+.manage-inventory {
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 10px 10px 28px #d9d9d9;
+    padding: 10px;
+    height: 170px;
+    position: relative;
+}
+
+.manage-inventory .delete-btn {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.manage-inventory .add-item-btn {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 9px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

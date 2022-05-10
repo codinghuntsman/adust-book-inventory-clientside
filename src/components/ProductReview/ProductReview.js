@@ -18,7 +18,7 @@ const ProductReview = ({ product }) => {
                 <p><span>price:</span> ${price}</p>
                 <p><span>quantity:</span> {quantity}</p>
             </div>
-            <Link className='fw-bold text-decoration-none update-btn' to='/update'>UPDATE</Link>
+            <Link className='fw-bold text-decoration-none update-btn' to={`/update/${product._id}`}>UPDATE</Link>
         </div>
     );
 };

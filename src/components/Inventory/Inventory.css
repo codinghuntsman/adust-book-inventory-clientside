@@ -1,10 +1,24 @@
-.inventory p {
-    font-size: 12px;
-    margin-bottom: 0;
-    font-family: sans-serif;
+.inventory-page {
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe;
 }
 
-.inventory p span {
-    font-weight: bold;
-    color: black;
+.inventory-page h6 {
+    padding-top: 13px;
+    font-size: 20px;
+}
+
+.inventory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .inventory {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
 }
