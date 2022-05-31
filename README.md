@@ -17,3 +17,5 @@ Click here for link: https://stackoverflow.com/users/18383895/md-sajedul-islam?t
 <li>There are amazing banner implementation also different types of section</li>
 <li>There are different types of page</li>
 <li>Therefor, amazing footer has been implemented</li>
+<li>Therefor, amazing footer has been implemented</li>
+<li>Therefor, amazing footer has been implemented</li>

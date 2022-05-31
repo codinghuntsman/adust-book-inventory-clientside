@@ -11,7 +11,9 @@ const ManageInventory = ({ product }) => {
         fetch("https://stormy-mesa-19852.herokuapp.com/user")
             .then(res => res.json())
             .then(data => setUsers(data));
-    }, [])
+    }, []);
+
+
     //-----------Delete a user from database----------
     const handleDelete = (id) => {
         const proceed = window.confirm("Are you sure you want to delete?")
@@ -26,8 +28,8 @@ const ManageInventory = ({ product }) => {
                         const remaining = users.filter(user => user._id !== id);
                         setUsers(remaining)
                     }
-                })
-        }
+                });
+        };
     };
     return (
         <div className='manage-inventory'>

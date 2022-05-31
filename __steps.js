@@ -15,7 +15,7 @@
  * npm install react-icons --save
  * 
  * -------------------------------------
- **image link is used is for banner
+ **image link is used for banner
  * --------------------------------------
  * https://i.ibb.co/5xsNZjn/books6.png
  * https://i.ibb.co/dk35xNB/books5.png
